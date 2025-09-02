@@ -9,30 +9,18 @@ ChurnAnalysis_MachineLearning/
 
 │
 ├── Dataset/                       
-│   └── tel_churn.csv              # Telco customer churn dataset 
-
-(raw data)
+│   └── tel_churn.csv              # Telco customer churn dataset (raw data)
 │
 ├── templates/                     
 │   └── index.html                 # HTML form (user input + prediction results)
-
 │
 ├── app.py                         # Flask application (runs the web app)
-
-├── models_pipeline.pkl            # Pickled dictionary containing 
-
-3 trained models
+├── models_pipeline.pkl            # Pickled dictionary containing 3 trained models
 │
 ├── notebooks/                     # Jupyter notebooks (for development & analysis)
-│   ├── Churn_Analysis-EDA.ipynb   # Data cleaning, 
-
-preprocessing, visualizations
-│   ├── model_building.ipynb      # Training & evaluating ML 
-
-models
-│   └── Churn_Prediction_Model.ipynb # Finalized models + pickle 
-
-creation
+│   ├── Churn_Analysis-EDA.ipynb   # Data cleaning, preprocessing, visualizations
+│   ├── model_building.ipynb      # Training & evaluating ML models
+│   └── Churn_Prediction_Model.ipynb # Finalized models + pickle creation
 │
 └── README.md             # Documentation (this file)
 
