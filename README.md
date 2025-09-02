@@ -17,16 +17,13 @@ ChurnAnalysis_MachineLearning/
 │   └── index.html                 # HTML form (user input + prediction results)
 
 │
-├── app.py                         # Flask application (runs the 
+├── app.py                         # Flask application (runs the web app)
 
-web app)
 ├── models_pipeline.pkl            # Pickled dictionary containing 
 
 3 trained models
 │
-├── notebooks/                     # Jupyter notebooks (for 
-
-development & analysis)
+├── notebooks/                     # Jupyter notebooks (for development & analysis)
 │   ├── Churn_Analysis-EDA.ipynb   # Data cleaning, 
 
 preprocessing, visualizations
