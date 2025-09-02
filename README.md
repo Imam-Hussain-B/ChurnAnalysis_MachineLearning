@@ -5,24 +5,20 @@ This project predicts whether a customer will churn (leave the service) or conti
 We use 3 machine learning models – Logistic Regression, Decision Tree, and Random Forest – and deploy them in a Flask web app for real-time predictions.
 
 ## 📂 Project Structure
-ChurnAnalysis_MachineLearning/
+| Path / File                        | Description                                                                             |
+| ---------------------------------- | --------------------------------------------------------------------------------------- |
+| **Dataset/**                       | Folder containing dataset                                                               |
+| ├── `tel_churn.csv`                | Telco customer churn dataset (raw data)                                                 |
+| **templates/**                     | Folder for HTML templates                                                               |
+| ├── `index.html`                   | HTML form for user input & prediction results                                           |
+| **app.py**                         | Flask application (runs the web app)                                                    |
+| **models\_pipeline.pkl**           | Pickled dictionary containing 3 trained models (Logistic, Decision Tree, Random Forest) |
+| **notebooks/**                     | Folder for Jupyter notebooks (EDA, training, prediction)                                |
+| ├── `Churn_Analysis-EDA.ipynb`     | Data cleaning, preprocessing, visualizations                                            |
+| ├── `model_building.ipynb`         | Training & evaluating ML models                                                         |
+| └── `Churn_Prediction_Model.ipynb` | Finalized models & pickle creation                                                      |
+| **README.md**                      | Project documentation file                                                              |
 
-│
-├── Dataset/                       
-│   └── tel_churn.csv              # Telco customer churn dataset (raw data)
-│
-├── templates/                     
-│   └── index.html                 # HTML form (user input + prediction results)
-│
-├── app.py                         # Flask application (runs the web app)
-├── models_pipeline.pkl            # Pickled dictionary containing 3 trained models
-│
-├── notebooks/                     # Jupyter notebooks (for development & analysis)
-│   ├── Churn_Analysis-EDA.ipynb   # Data cleaning, preprocessing, visualizations
-│   ├── model_building.ipynb      # Training & evaluating ML models
-│   └── Churn_Prediction_Model.ipynb # Finalized models + pickle creation
-│
-└── README.md             # Documentation (this file)
 
 # 🚀 Workflow Overview
 
