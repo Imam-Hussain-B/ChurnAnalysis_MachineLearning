@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Churn Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Customer Churn Prediction</h2>
+
+        <form method="POST" action="/" class="card p-4 shadow-lg rounded">
+            <div class="row">
+                <!-- Inputs for 19 fields -->
+                <div class="col-md-6 mb-3">
+                    <label>SeniorCitizen</label>
+                    <input type="text" name="query1" value="{{query1}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>MonthlyCharges</label>
+                    <input type="text" name="query2" value="{{query2}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>TotalCharges</label>
+                    <input type="text" name="query3" value="{{query3}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Gender</label>
+                    <input type="text" name="query4" value="{{query4}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Partner</label>
+                    <input type="text" name="query5" value="{{query5}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Dependents</label>
+                    <input type="text" name="query6" value="{{query6}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>PhoneService</label>
+                    <input type="text" name="query7" value="{{query7}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>MultipleLines</label>
+                    <input type="text" name="query8" value="{{query8}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>InternetService</label>
+                    <input type="text" name="query9" value="{{query9}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>OnlineSecurity</label>
+                    <input type="text" name="query10" value="{{query10}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>OnlineBackup</label>
+                    <input type="text" name="query11" value="{{query11}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>DeviceProtection</label>
+                    <input type="text" name="query12" value="{{query12}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>TechSupport</label>
+                    <input type="text" name="query13" value="{{query13}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>StreamingTV</label>
+                    <input type="text" name="query14" value="{{query14}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>StreamingMovies</label>
+                    <input type="text" name="query15" value="{{query15}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Contract</label>
+                    <input type="text" name="query16" value="{{query16}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>PaperlessBilling</label>
+                    <input type="text" name="query17" value="{{query17}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>PaymentMethod</label>
+                    <input type="text" name="query18" value="{{query18}}" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Tenure</label>
+                    <input type="text" name="query19" value="{{query19}}" class="form-control">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-3">Predict</button>
+        </form>
+
+        <div class="mt-4">
+            <h4>Result</h4>
+            <div class="card p-3 mb-2">
+                <h5>Random Forest</h5>
+                <p>{{output5}}</p>
+                <p>{{output6}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
